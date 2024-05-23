@@ -1,0 +1,238 @@
+body{
+    font-family: "Red Hat Display", sans-serif;
+    
+
+}
+.logo{
+display: flex;
+justify-content: center;
+margin-top: 30px;
+margin-bottom: 50px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card2{
+    /* border: 5px red solid; */
+    text-align: center;
+    margin-top: 46px;
+}
+h3{
+    color: #28283D;
+    font-size: 64px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.0;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    color: #87879D;
+    margin: 30px;
+}
+
+button{
+    border: none;
+}
+
+.multiplebuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.vertical-circle{
+    /* position: absolute;
+    left: 50%; */
+    place-items: center;
+    display: grid;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+.vertical{
+    height: 84px;
+    border-left: 1px solid#87879D;
+
+   
+}
+.circle {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    border: 1px solid#87879D;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bolder;
+}
+.photos{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    margin-bottom: 70px;
+}
+
+.wordscard{
+    text-align: center;
+    display: grid;
+    width: 445px;
+    margin: auto;
+}
+.wordscard h5{
+    font-size: 16px;
+    color: #4D96A9;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    text-shadow: 0 4px 4px rgb(0,0,0,.25);
+
+}
+.wordscard h4{
+    font-size: 40px;
+    color: #28283D;
+    margin: 15px;
+}
+.wordscard p{
+    font-size: 18px;
+    color: #87879D;
+}
+
+.mainfooter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .mainfooter::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    width: 1440px;
+    height: 308px;
+    background-color:#4D96A9; 
+    opacity: 0.8;
+  }
+  
+  .mainfooter img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footertabs{
+    width: 1100px;
+    justify-content: space-around;
+    /* top: 50%; */
+    display: flex;
+    position: absolute;
+    /* border: 2px solid red; */
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .footertabs h4{
+    color: white;
+    font-size: 40px;
+    width:350px;
+  }
+
+  .footertabs p{
+    color: white;
+    font-size: 16px;
+    width: 350px;
+    font-weight: bolder;
+  }
+
+  .circle ,.two{
+    z-index: 3;
+    margin-bottom: -28px;
+    background-color: #FFFFFF;
+  }
+  .button:hover {
+    background-color: #71C0D4; 
+  }/* Background color on hover */
+    
+
+
+
+  @media only screen and (max-width: 991.98px) {
+    
+    .card {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Adjust height for vertical stacking */
+    }
+    
+    .card2{
+        order: 1;
+     }
+     .card2 img{
+
+        width: 394px !important;
+        height: 303px !important;
+     }
+      .photos img{
+        width: 164px !important;
+        height: 156px !important;
+     }
+     .mainfooter::before {
+        height: 428px !important;
+        max-width: unset;
+     }
+
+     .mainfooter img {
+        max-width: unset;
+        height: 428px !important;
+     }
+
+     .footertabs{
+        display: grid;
+        place-items: center;
+        text-align: center;
+     }
+     .footertabs h4{
+        margin: 0;
+     }
+     .wordscard{
+        width: unset;
+     }
+  }
+
+
+
+
+  @media only screen and (max-width: 575.98px) {
+    .landingpage{
+        width: 100%;
+    }
+    
+    .photos img{
+
+        width: 151px !important;
+        height: 143px !important;
+       
+     }
+     .photos img:nth-last-child(3){
+        margin-right: 0 !important;
+     }
+     .photos{
+        display: block;
+     }
+     .multiplebuttons{
+        display: grid;
+     }
+     .footertabs h4{
+        font-size: 32px;
+     }
+     .multiplebuttons button:nth-child(1){
+        margin-bottom: 19px;
+     }
+    }
